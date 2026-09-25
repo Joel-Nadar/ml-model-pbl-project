@@ -1,0 +1,45 @@
+# Node.js
+node-backend/node_modules/
+node-backend/logs/
+node-backend/.env
+node-backend/package-lock.json
+
+# Python
+python-ml/__pycache__/
+python-ml/*.pyc
+python-ml/venv/
+python-ml/.env
+python-ml/*.egg-info/
+
+# Data
+data/*.csv
+data/*.db
+data/*.sqlite
+
+# Artifacts
+artifacts/*.joblib
+artifacts/*.png
+artifacts/*.json
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Old project
+climate-ml/
+climate-flood-ml.zip

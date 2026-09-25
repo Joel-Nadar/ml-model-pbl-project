@@ -1,0 +1,37 @@
+{
+  "name": "flood-risk-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for flood risk prediction system",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "ingest-historical": "node src/scripts/ingestHistoricalWeather.js",
+    "ingest-live": "node src/scripts/ingestLiveWeather.js",
+    "daily-cron": "node src/scripts/dailyCron.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "flood",
+    "prediction",
+    "climate",
+    "resilience"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "twilio": "^4.19.0",
+    "nodemailer": "^6.9.7",
+    "winston": "^3.11.0",
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  }
+}
